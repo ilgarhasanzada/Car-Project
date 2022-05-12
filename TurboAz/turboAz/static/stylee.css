@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: antiquewhite;
+}
+.container{
+    padding: 40px;
+}
+.container .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .row .col{
+    margin: 15px;
+    width: 200px;
+    height: 250px;
+    background-color: azure;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.6s !important;
+}
+.container .row .col a *{
+    color: black !important;    
+}
+
+.container .col .img{
+    width: 100%;
+    height: 60%;
+    background-color: black;
+}
+.container .col .img img{
+    width: 100%;
+    height: 100%;
+}
+.container .col .body{
+    margin: 5px;
+}
+.container .sebet{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background-color: black;
+}
+.sebet a{
+    color: red;
+}
+.container .col .body .end{
+    margin-top: 10px !important;
+    font-size: 12px!important;
+}
+.container .marka_list{
+    width: 100% !important;
+}
+.create{
+    background-color: blue !important;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    margin: 10px;
+}.create:hover{
+    background-color: red !important;
+    cursor: pointer;
+}
+.search{
+    background-color: red !important;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    float: right;
+    margin: 20px;
+}
+.search:hover{
+    background-color: blue !important;
+    cursor: pointer;
+}
+.container .col:hover {
+    background-color: black;
+}
+.container .col:hover *:not(.sebet a){
+    color: white !important;
+}
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color: white !important;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.navbar ul li a:hover{
+    color: blue !important;
+}
+.navbar ul li a{
+    color: red !important;
+    font-size: 20px;
+    transition: 0.6s;
+}
+.car_form p{
+    margin: 10px;
+}
+.register p{
+    margin: 10px !important;
+}
+.cabinet{
+    display: flex;
+    justify-content: flex-end;
+}
+.cabinet li{
+    margin-left: 10px;
+}
+.marka_filter{
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    overflow:scroll;
+    display: inline-block;
+}
+.list-group{
+    display: flex;
+    flex-direction: column;
+}
+.list-group a{
+color: black;
+}
+.list-group a:hover{
+    color: white;
+    background-color: gray;
+}
+.car_detail ul{
+    display: inline-block;
+    padding-right: 50px;
+}
+.car_detail ul li{
+    font-size: 20px;
+    line-height: 30px;
+}

@@ -1,0 +1,10 @@
+{% extends 'home.html' %}
+{% block add_filter %}
+{% if models %}
+<div class="marka_filter">
+    <div class="list-group">
+        {% for model in models %}
+        <a href="{% url 'model_filter' model.id %}" class="list-group-item">{{model}}</a>
+        {% endfor %}
+</div></div>{% endif %}
+{% endblock add_filter %}

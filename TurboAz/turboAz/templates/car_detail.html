@@ -1,0 +1,21 @@
+{% extends 'home.html' %} {% block content %}
+<img style="width: 400px" src="{{car.car_image.url}}" alt="" />
+<div class="car_detail">
+<ul >
+  <li>Marka: {{car.marka_name}}</li>
+  <li>Model: {{car.model_name}}</li>
+  <li>Year: {{car.year}}</li>
+  <li>Is new: {{car.is_new}}</li>
+  <li>Price: {{car.price}}</li>
+  <li>Date: {{car.date_time}}</li>
+</ul>
+<ul class="car_detail">
+  <li>Distange: {{car.distange}}</li>
+  <li>City: {{car.city}}</li>
+  <li>Yanacaq: {{car.yanacaq}}</li>
+  <li>Ötürücü: {{car.oturucu_teker}}</li>
+  <li>Color: {{car.color}}</li>
+  <li>Sürətlər qutusu: {{car.suretler_qutusu}}</li>
+</ul>
+</div>
+{% endblock content %}

@@ -1,0 +1,10 @@
+
+{% extends 'home.html' %}
+{% block content %}
+<form class='login' action="" method="post">
+    {% csrf_token %}
+{{form.as_p}}
+<button type='submit'>Log in</button>
+</form>
+<p>If you don't have any account, <a href={% url 'register' %}>Sign Up</a></p>
+{% endblock content %}

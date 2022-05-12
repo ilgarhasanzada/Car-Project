@@ -1,0 +1,22 @@
+{% extends 'home.html' %}
+{% block content %}
+<ul class='cabinet'><li>{{user.username}}</li>
+<li><a href={% url 'logout' %}>Log out</a></li></ul>
+
+
+<div class="row">
+    {% for car in cars %}
+    <a href={% url 'car_detail' car.id %}>
+    <div class="col">
+        <div class="img"><img src="{{car.car_image.url}}" alt="Sekil"></div>
+        <div class="body">
+        <h3 class="header">{{car.price}}</h3>
+        <h4>{{car}}</h4>
+        <h5 class="description">{{car.year}}, {{car.engine}}, {{car.distange}} km</h5>
+        <div class="end">{{car.city}}, {{car.date_time}}</div>
+       </div>
+    </div>
+</a>
+    {% endfor %}
+</div>
+{% endblock content %}
